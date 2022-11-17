@@ -6,23 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Weather App</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      src="https://kit.fontawesome.com/f195394978.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>hello</h1>
+      <h1>New York</h1>
+      <ul>
+        <li>Friday 05:00</li>
+        <li>Clear</li>
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="cloudy"
+          />
+          15°C | °
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Precipitation: 1%</li>
+            <li>Humidity: 77%</li>
+            <li>Wind: 11km/h</li>
+          </ul>
+        </div>
+      </div>
+      <small>
+        <a
+          href="https://github.com/nmojicaa/vanilla-weather-app"
+          target="_blank"
+          >Coded</a
+        ></small
+      >
+      by Natalia Mojica
     </div>
-
     <script src="src/app.js"></script>
   </body>
 </html>
