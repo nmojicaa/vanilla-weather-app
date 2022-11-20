@@ -20,36 +20,64 @@
   </head>
   <body>
     <div class="container">
-      <h1>New York</h1>
-      <ul>
-        <li>Friday 05:00</li>
-        <li>Clear</li>
-      </ul>
+            <form id="search-form" class="mb-3">
+                <div class="row">
+                        <div>
+                            <form id="search-form"> 
+                            <input type="text" 
+                            id="city-input"
+                            placeholder="Enter a City"
+                            autocomplete="off"
+                            autofocus="on"
+                            class="search">
+                    
+                            <input 
+                            id="search-input" 
+                            type="submit" 
+                            value="Search" 
+                            class="button"/>
+                            <button class="current" id="current-location">
+                            Current
+                            </button>
+            </form>
+    </div>
+</form>
+    <div class ="text-align">
+        <h1 id="city">New York</h1>
+        <ul>
+            <li id="current-time">Friday 05:00</li>
+            <li id="description">Clear</li>
+        </ul>
+      </div>
       <div class="row">
         <div class="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-            alt="cloudy"
-          />
-          15°C | °
+            <div class="clearfix weather-temperature">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                    alt="cloudy"
+                    />
+                   <strong id="temperature">15</strong>
+                    °C | °F
+            </div>
         </div>
         <div class="col-6">
-          <ul>
-            <li>Precipitation: 1%</li>
-            <li>Humidity: 77%</li>
-            <li>Wind: 11km/h</li>
-          </ul>
+                <ul>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span> m/h</li>
+                </ul>
         </div>
       </div>
-      <small>
-        <a
-          href="https://github.com/nmojicaa/vanilla-weather-app"
-          target="_blank"
-          >Coded</a
-        ></small
-      >
-      by Natalia Mojica
+      </div>
     </div>
+    <h2> This project was
+        <a
+            href="https://github.com/nmojicaa/vanilla-weather-app"
+            target="_blank"
+            >coded</a
+            ></small
+        >
+        by Natalia Mojica
+        <small>
+        </h2>
     <script src="src/app.js"></script>
   </body>
 </html>
