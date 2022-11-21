@@ -58,6 +58,14 @@ li:first-letter {
   line-height: 1;
 }
 
+.weather-temperature .active {
+  position: relative;
+  color: #aac4ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .text-align {
   margin-bottom: 20px;
 }
